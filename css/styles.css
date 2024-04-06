@@ -7,6 +7,7 @@
     --cloud: #F4F4FD;
     --cornflower: #E7E9FC;
     --green: #31D0AA;
+    --DAIRY: #fcfcfc;
 
     --font-family: 'Roboto', sans-serif;
     --second-family: ' Raleway', sans-serif;
@@ -147,6 +148,8 @@ address {
 }
 
 .fon-hero {
+   position: relative;
+   
     padding: 189px 472.5px;
     margin-bottom: 120px;
     background: linear-gradient(to right, rgba(47, 48,
@@ -182,6 +185,19 @@ address {
 .button-hero:hover,
 .button-hero:focus {
     background: var(--ocean);
+}
+
+.modal-fone {
+   position: absolute;
+   top:10px;
+   left: 516px;
+   
+   width: 408px;
+    height: 584px;
+    flex-shrink: 0;
+    border-radius: 4px;
+    background: var(--DAIRY);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
 /* ////////////////.....text.....//////////////////// */
@@ -372,13 +388,13 @@ address {
 .footer .container {
     width: 1440px;
     padding: 0;
-    
+
 }
 
 .footer-fon {
     display: flex;
     justify-content: center;
-    
+
     background: var(--navy-blue);
     padding: 101px 700.2px 100px 149.2px;
 }
@@ -393,8 +409,8 @@ address {
 }
 
 .footer-logo {
-   display: flex;
-    
+    display: flex;
+
     margin-bottom: 17.5px;
 
     font-family: var(--second-family);
@@ -413,9 +429,11 @@ address {
 .footer .container {
     display: flex;
 }
-.footer-social{
+
+.footer-social {
     margin-left: 120px;
 }
+
 .footer-social>p {
     color: var(--white);
     margin-bottom: 16px;
@@ -427,7 +445,7 @@ address {
     align-items: center;
     gap: 16px;
 
-    
+
 
 }
 
@@ -445,8 +463,9 @@ address {
     border-radius: 50%;
     background-color: var(--iris)
 }
+
 .footer-social-link:hover,
-.footer-social-link:focus{
+.footer-social-link:focus {
     background-color: var(--green);
 }
 

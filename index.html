@@ -59,11 +59,6 @@
             Your Business
           </h1>
           <button class="button-hero" data-modal-open type="button">Order Service</button>
-          <div class="backdrop is-hidden" data-modal>
-            <div class="modal">
-              <button class="close-modal" data-modal-close><img src="" alt="close" /></button>
-            </div>
-          </div>
         </div>
       </section>
       <section class="container">
@@ -397,6 +392,16 @@
         </div>
       </div>
     </footer>
+   <!-- Модалка -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <div class="close-fon" data-modal-close>
+          <svg class="close-modal" width="8" height="8">
+            <use href="./images/symbol-defs.svg#icon-close" alt="close" />
+          </svg>
+        </div>
+      </div>
+    </div>
     <script src="./js/modal.js"></script>
   </body>
 </html>

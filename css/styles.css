@@ -11,10 +11,8 @@
 
     --font-family: 'Roboto', sans-serif;
     --second-family: ' Raleway', sans-serif;
+
 }
-.backdrop {
-    position: fixed;
-z-index: 999;}
 
 html {
     list-style: none;
@@ -67,7 +65,7 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 14px 153px;
+    padding: 14px 153px 0 153px;
 }
 
 .nav-flex {
@@ -102,11 +100,29 @@ address {
 }
 
 .nav-list {
-    margin-bottom: 24px;
+
+    display: block;
+    font-weight: 500;
     line-height: 150%;
-    letter-spacing: 0.02em;
+    letter-spacing: 0.32px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    position: relative;
     color: var(--navy-blue);
-    text-decoration: none;
+}
+
+.line-bottom::after {
+    content: '';
+    display: block;
+
+    position: absolute;
+
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background-color: var(--ocean);
+    bottom: -1px;
+
 }
 
 .nav-list:hover,
@@ -144,7 +160,7 @@ address {
 /* //////////HERO////////////// */
 .hero {
     /* width: 1440px; */
-   
+
     display: flex;
     justify-content: center;
     margin: 0 auto;
@@ -156,9 +172,9 @@ address {
 
     padding: 189px 472.5px;
     margin-bottom: 120px;
-   
 
-   
+
+
     background: linear-gradient(to right, rgba(47, 48,
                 58,
                 0.4), rgba(47,
@@ -195,10 +211,13 @@ address {
 }
 
 .backdrop {
-    position: absolute;
-        width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    background-color: rgba(46, 47, 66, 0.40);
+    background-color: rgba(46, 47, 66, 0.4);
+
 }
 
 .is-hidden {
@@ -207,8 +226,8 @@ address {
 }
 
 .modal {
-    
-position: absolute;
+
+    position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%) scale(1);
@@ -217,7 +236,8 @@ position: absolute;
     flex-shrink: 0;
     border-radius: 4px;
     background: var(--DAIRY);
-    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12),
+        0px 2px 1px 0px rgba(0, 0, 0, 0.2);
 }
 
 
@@ -288,7 +308,7 @@ position: absolute;
     background-color: var(--cloud);
 }
 
-/* ////////////recklama///////////// */
+/* ////////////What are we doing///////////// */
 
 .recklama-block>h2 {
     margin-bottom: 72px;
@@ -315,7 +335,7 @@ position: absolute;
     gap: 24px;
 }
 
-/* /////////////team///////////////////// */
+/* /////////////Personal///////////////////// */
 .fon {
     display: flex;
     justify-content: center;
@@ -531,7 +551,7 @@ position: absolute;
     width: 586px;
         height: 48px;
 } */
-/* ////////////BUTTON-BLOCK/////////////////// */
+/* ////////////BUTTON-Portfolio/////////////////// */
 
 .margin-header {
     margin-bottom: 80px;
@@ -597,7 +617,7 @@ position: absolute;
     color: var(--white);
 }
 
-/* ///////////label///////////////////// */
+/* ///////////Portfolio///////////////////// */
 .label {
     display: flex;
     justify-content: center;
@@ -657,37 +677,40 @@ position: absolute;
     position: relative;
     width: 360px;
     height: 300px;
-    
+
 }
-.label-fone:hover{
+
+.label-fone:hover {
     opacity: 1;
 }
+
 .label-fone {
 
     position: absolute;
     top: 0;
     left: 0;
-opacity: 0;
+    opacity: 0;
     width: 100%;
     height: 100%;
     background-color: var(--ocean);
 
 }
-.label-fone>p{
-position: absolute;
-   top: 40px;
-   left: 32px;
-   right: 32px;
-   
-   
-   
 
-   font-family:var(--font-family);
-        font-size: 16px;
-        font-style: normal;
-        font-weight: 400;
-        line-height: 150%;
-        color: var(--DAIRY);
-        letter-spacing: 0.32px;
+.label-fone>p {
+    position: absolute;
+    top: 40px;
+    left: 32px;
+    right: 32px;
+
+
+
+
+    font-family: var(--font-family);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    color: var(--DAIRY);
+    letter-spacing: 0.32px;
 
 }

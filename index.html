@@ -112,7 +112,8 @@
           </li>
         </ul>
       </section>
-<!-- ///////What are we doing//////// -->
+
+      <!-- ///////What are we doing//////// -->
       <section class="container">
         <div class="recklama-block">
           <h2>What are we doing</h2>
@@ -389,12 +390,49 @@
               </li>
             </ul>
           </div>
+          <form class="footer-form">
+            <div class="subscribe">
+              <label for="subscribe">Subscribe</label>
+              <input type="email" name="subscribe" id="subscribe" />
+            </div>
+            <div class="button-subscribe">
+              <button type="submit">Subscribe</button>
+            </div>
+          </form>
         </div>
       </div>
     </footer>
     <!-- Модалка -->
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">
+        <form class="form">
+          <p>Leave your contacts and we will call you back</p>
+          <div class="info">
+            <label for="name">Name </label>
+            <input type="text" name="name" id="name" autofocus />
+          </div>
+
+          <div class="info">
+            <label for="phone">Phone </label>
+            <input type="tel" name="phone" id="phone" />
+          </div>
+
+          <div class="info">
+            <label for="mail">mail </label>
+            <input type="email" name="mail" id="mail" />
+          </div>
+          <div class="comment">
+            <label for="comment">Comment</label>
+            <textarea name="comment" id="comment" rows="8"></textarea>
+          </div>
+          <div class="policy">
+            <input type="checkbox" name="policy" id="policy" />
+            <label for="policy">I accept the terms and conditions of the</label>
+          </div>
+          <div class="submit-button">
+            <button class="submit" type="submit">send</button>
+          </div>
+        </form>
         <div class="close-fon" data-modal-close>
           <svg class="close-modal" width="8" height="8">
             <use href="./images/symbol-defs.svg#icon-close" alt="close" />
